@@ -6,5 +6,5 @@ import javax.transaction.Transactional;
 
 @Service
 @Transactional
-public class ReportServiceImpl {
+public class ReportServiceImpl implements ReportService{
 }
