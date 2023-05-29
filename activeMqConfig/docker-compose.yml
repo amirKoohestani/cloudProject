@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  activemq:
+    container_name: coreMq
+    restart: always
+    image: webcenter/activemq:latest
+    environment:
+      ACTIVEMQ_ADMIN_LOGIN: admin
+      ACTIVEMQ_ADMIN_PASSWORD: admin
+    ports:
+      - "61616:61616"
+      - "8161:8161"
